@@ -1,7 +1,8 @@
 provider "google" {
-credentials = "${file("gcpcredentials.json")}"
-project_id : "my-kubernetes-cluster-343811",
-region = "us-central1"
+  credentials = "${file("gcpcredentials.json")}"
+  project = "my-kubernetes-cluster-343811"
+  region  = "us-central1"
+  zone    = "us-central1-c"
 }
 
 resource "google_compute_instance" "default" {
