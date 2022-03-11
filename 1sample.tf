@@ -1,6 +1,6 @@
 provider "google" {
 credentials = "${file("gcpcredentials.json")}"
-project_id : "primeval-pen-343614",
+project_id : "my-kubernetes-cluster-343811",
 region = "us-central1"
 }
 
